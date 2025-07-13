@@ -10,7 +10,7 @@ def load_agent(path, state_dim, action_dim, device="cuda" if torch.cuda.is_avail
     return agent
 
     
-def test(agent, episodes=50):
+def test(agent, episodes=5):
     env = gym.make("CartPole-v1", render_mode="human")
 
     for ep in range(1, episodes + 1):
